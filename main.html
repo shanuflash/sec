@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+<title> Saveetha Engineering College </title>
+<style>
+  *{
+    padding:0;
+    margin:0;
+  }
+  body{
+    background-color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+    table, th, td
+    {
+       border: 1px solid;
+       border-collapse:collapse;
+       width:12%;
+       text-align:center;
+    }
+    .logo{
+        width:100%;
+        
+    }
+    main{
+      padding:20px;
+    }
+    .main-1{
+      padding:30px;
+      background-color: white;
+      color:black;
+      border-radius:7px;
+      box-shadow:1px 1px solid black;
+    }
+  .main-1 ul {
+    padding-left:30px
+  }
+  .side-nav{
+    width:300px;
+    height: 700px;
+    background-color: red;
+    position: absolute;
+    top:0;
+    left:-1000px;
+    
+  }
+  .nav-item{
+    width:30px;
+    height:5px;
+    background-color:black;
+    margin: 10 0;
+  }
+ .more{
+   margin: 20px 0;
+   padding :10px;
+   font-size:20px;
+   width: 100px;
+   border-radius:5px;
+   outline:none;
+   border: none;
+  background-color: blue;
+ color:white;
+ }
+ .more:focus{
+   outline: none;
+ }
+</style>   
+    
+    
+</head>
+
+<body>
+    <nav><img onclick="ff()" class="logo"src="logo.png" alt="saveetha logo" style="vertical-align:middle"></nav>
+<div class="side-nav" id="demo">
+<div class="nav-click">
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+</div>
+</div>
+    <main>
+  <div class="main-1">
+<p>
+    <b>Saveetha Engineering College</b> is a leading Engineering College located in Chennai, India., which offers a global approach to education and research, with a focus on global perspectives and expertise. SEC offering a wide range of undergraduate, postgraduate and doctoral programs in Engineering. Some of its Academic Highlight are,</p>
+<ul>
+<li>Only Engineering College in India to have 30 students per class.</li>
+<li>91% results in University exam.</li>
+<li>173 University Ranks.</li>
+<li>Compulsory internship every year.</li>
+<li>93% of grandaunts received Anna University degrees every year.</li>
+</ul>
+<p>
+    Saveetha Engineering College (SEC) was established in 2001, by the Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated Medical Professional. SEC has a total strength of 4349 students in 12 UG courses, 8 PG Courses including MBA, MS by Research and Doctoral programs (PhD)  in five Departments. <b>Ranked among top 10 % of colleges in academic performances by Anna University</b>, among the colleges where more than 3000 students appeared.
+</p>
+<div>
+  <button class="more">more</button>
+</div>
+
+</div>
+    <h3>Departments:</h3>
+<ol>
+    <li>IT</li>
+    <li>CSE</li>
+    <li>ECE</li>
+    <li>EEE</li>
+    <li>Agri</li>
+    <li>Mech</li>
+</ol>
+    <h3>Placement Recruiters:</h3>
+<table>
+  <tr>  
+    <th>Company</th>
+    <th>CTC</th>
+  </tr>  
+  <tr>
+    <td>Amazon</td>
+    <td>14 Lakhs</td>
+  </tr>
+  <tr>
+    <td>accenture</td>
+    <td>12 Lakhs</td>
+  </tr>
+  <tr>
+    <td>Capgemini</td>
+    <td>10 Lakhs</td>
+  </tr>
+  <tr>
+    <td>Cognizant</td>
+    <td>10 Lakhs</td>
+  </tr>
+  <tr>
+    <td>TCS</td>
+    <td>9 Lakhs</td>
+  </tr>
+</table>
+    <br>
+ <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+</main>
+<script>
+  const ff=()=>{
+    var t = document.getElementById("demo");
+    t.style.left="0";
+  }
+  </script>
+</body>
+    </html>
