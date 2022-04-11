@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
@@ -43,31 +44,27 @@
                 border-radius: 7px;
                 box-shadow: 1px 1px solid black;
             }
-            .menu-1 {
+            .menu {
                 padding: 10px;
                 margin: 10;
                 background-color: cadetblue;
                 border-radius: 25px;
                 color: black;
                 height: 25px;
+
             }
-            .menu-1 ul {
-                margin-top: -5;
-                display: flex;
-                justify-content: flex-start;
+            .menu ul{
+                text-align: center;
+                display:flex;
+                justify-content: space-evenly;
+            }
+            .menu li{
                 list-style: none;
+                display: inline;
             }
 
             .main-1 ul {
                 padding-left: 30px;
-            }
-            .menu-1 ul li {
-                margin: 5 100px;
-            }
-
-            .menu-1 ul {
-                /*display: flex;*/
-                justify-content: center;
             }
 
             .more {
@@ -121,7 +118,7 @@
             src="http://saveetha.ac.in/images/WEB_LOGO-01.png"
             alt="saveetha logo"
             style="vertical-align:middle">
-        <div class="menu-1">
+        <div class="menu">
             <ul>
                 <li>Home</li>
                 <li>About</li>
