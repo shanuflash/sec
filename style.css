@@ -21,6 +21,7 @@ th {
 }
 
 .logo {
+    background-color: white;
     width: 100%;
 }
 
@@ -37,13 +38,20 @@ main {
 }
 
 .menu {
+    position: sticky;
+    top: 13;
+    /* width:97.5%; */
     padding: 10px;
-    margin: 10;
-    background: rgb(146, 138, 255);
-    border-radius: 25px;
+    /* margin: 10; */
+    background: rgb(255, 255, 255);
+    /* border-radius: 25px; */
     color: rgb(0, 0, 0);
     height: 25px;
 
+}
+
+.sticky{
+    background: red;
 }
 
 .menu ul {

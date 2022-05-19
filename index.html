@@ -1,30 +1,44 @@
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <title>
-        Saveetha Engineering College
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap"
+            rel="stylesheet">
+        <title>
+            Saveetha Engineering College
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <img class="logo" src="http://saveetha.ac.in/images/WEB_LOGO-01.png" alt="saveetha logo"
-        style="vertical-align:middle">
-    <div class="menu">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Departments</li>
-            <li>Admission</a></li>
+    <body>
+        <img
+            class="logo"
+            src="http://saveetha.ac.in/images/WEB_LOGO-01.png"
+            alt="saveetha logo"
+            style="vertical-align:middle">
+        <div class="menu">
+            <ul>
+                <li onclick="myFunction()">Home</li>
+                <li>About</li>
+                <li>Departments</li>
+                <li>Admission</a></li>
             <li onclick="openForm()">Login</li>
         </ul>
     </div>
     <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
-    <script id="loginscript">
+
+    <script>
+        function myFunction() {
+            const list = document.getElementById("menu").classList;
+            list.add("sticky");  
+        }
+        
         function openForm() {
             var x = document.getElementById("login");
             if (x.style.display === "none") {
@@ -34,28 +48,22 @@
             }
         }
     </script>
-<!-- <script>
-    function openForm() {
-        document.getElementById("login").style.display = "block";
-      }
-      
-      function closeForm() {
-        document.getElementById("login").style.display = "none";
-      }
-</script> -->
+    <!-- <script> function openForm() {
+    document.getElementById("login").style.display = "block"; } function closeForm()
+    { document.getElementById("login").style.display = "none"; } </script> -->
     <br>
     <div id="login" style="display:none">
-            <div class="form-1">
-                <form id="loginform">
-                    Email:
-                    <input id="input1" type="email" required="required"/>
-                    <br>
-                    Password:
-                    <input id="input1" type="password" required="required"/><br>
-                    <input class="submit" type="submit" value="Submit"/>
-                </form>
-            </div>
+        <div class="form-1">
+            <form id="loginform">
+                Email:
+                <input id="input1" type="email" required="required"/>
+                <br>
+                Password:
+                <input id="input1" type="password" required="required"/><br>
+                <input class="submit" type="submit" value="Submit"/>
+            </form>
         </div>
+    </div>
 
     <main>
         <div class="main-1">
@@ -83,52 +91,111 @@
             <div>
                 <button class="more">more</button>
             </div>
+            <div>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+                test
+                <br>
+            </div>
 
-<!--         </div>
-        <h3>Departments:</h3>
-        <ol>
-            <li>IT</li>
-            <li>CSE</li>
-            <li>ECE</li>
-            <li>EEE</li>
-            <li>Agri</li>
-            <li>Mech</li>
-        </ol>
-        <h3>Placement Recruiters:</h3>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>CTC</th>
-            </tr>
-            <tr>
-                <td>Amazon</td>
-                <td>14 Lakhs</td>
-            </tr>
-            <tr>
-                <td>accenture</td>
-                <td>12 Lakhs</td>
-            </tr>
-            <tr>
-                <td>Capgemini</td>
-                <td>10 Lakhs</td>
-            </tr>
-            <tr>
-                <td>Cognizant</td>
-                <td>10 Lakhs</td>
-            </tr>
-            <tr>
-                <td>TCS</td>
-                <td>9 Lakhs</td>
-            </tr>
-        </table>
-        <br>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-        </form> -->
-    </main>
-</body>
+            <!-- </div> <h3>Departments:</h3> <ol> <li>IT</li> <li>CSE</li> <li>ECE</li>
+            <li>EEE</li> <li>Agri</li> <li>Mech</li> </ol> <h3>Placement Recruiters:</h3>
+            <table> <tr> <th>Company</th> <th>CTC</th> </tr> <tr> <td>Amazon</td> <td>14
+            Lakhs</td> </tr> <tr> <td>accenture</td> <td>12 Lakhs</td> </tr> <tr>
+            <td>Capgemini</td> <td>10 Lakhs</td> </tr> <tr> <td>Cognizant</td> <td>10
+            Lakhs</td> </tr> <tr> <td>TCS</td> <td>9 Lakhs</td> </tr> </table> <br> <form>
+            <label for="fname">First name:</label><br> <input type="text" id="fname"
+            name="fname"><br> <label for="lname">Last name:</label><br> <input type="text"
+            id="lname" name="lname"> </form> -->
+        </main>
+    </body>
 
 </html>
