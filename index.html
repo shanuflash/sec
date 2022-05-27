@@ -1,5 +1,4 @@
 <html>
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,35 +14,42 @@
         </title>
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
-        <!-- <img class="logo" src="http://saveetha.ac.in/images/WEB_LOGO-01.png"
-        alt="saveetha logo" style="vertical-align:middle"> -->
+        <img
+            class="logo"
+            src="http://saveetha.ac.in/images/WEB_LOGO-01.png"
+            alt="saveetha logo">
         <div class="menu">
-            <img
-                class="logo"
-                src="http://saveetha.ac.in/images/WEB_LOGO-01.png"
-                alt="saveetha logo">
-            <div class="nav">
-            " Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test "
-                <br>
-                <div>
-                    <ul class="navbar">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Departments</li>
-                        <li>Admission</li>
-                        <li onclick="openForm()">Login</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- <ul class="navbar"> <li>Home</li> <li>About</li> <li>Departments</li>
-            <li>Admission</li> <li onclick="openForm()">Login</li> </ul> -->
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Departments</li>
+                <li>Admission</li>
+                <li onclick="openForm()">Login</li>
+            </ul>
         </div>
-        <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
-
+        <div class="hammenu">
+            <a href="#home" id="hamtitle">Saveetha Engineering College</a>
+            <div id="hammenu-items">
+                <a href="#news">About</a>
+                <a href="#contact">Departments</a>
+                <a href="#about">Admission</a>
+            </div>
+            <a href="javascript:void(0);" class="hamicon-holder" onclick="showham()">
+                <div class="hamicon"></div>
+                <div class="hamicon"></div>
+                <div class="hamicon"></div>
+            </a>
+        </div>
         <script>
-
+            function showham() {
+                var x = document.getElementById("hammenu-items");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
             function openForm() {
                 var x = document.getElementById("login");
                 if (x.style.display === "none") {
@@ -53,10 +59,6 @@
                 }
             }
         </script>
-        <!-- <script> function openForm() {
-        document.getElementById("login").style.display = "block"; } function closeForm()
-        { document.getElementById("login").style.display = "none"; } </script> -->
-        <br>
         <div id="login" style="display:none">
             <div class="form-1">
                 <form id="loginform">
@@ -65,13 +67,13 @@
                     <br>
                     Password:
                     <input id="input1" type="password" required="required"/><br>
-                    <input class="submit" type="submit" value="Submit"/>
+                    <input class="more " type="submit" value="Submit"/>
                 </form>
             </div>
         </div>
 
         <main>
-            <div class="main-1">
+            <div id="content1">
                 <p>
                     <b>Saveetha Engineering College</b>
                     is a leading Engineering College located in Chennai, India., which offers a
@@ -93,113 +95,61 @@
                     <b>Ranked among top 10 % of colleges in academic performances by Anna University</b>
                     , among the colleges where more than 3000 students appeared.
                 </p>
-                <div>
-                    <button class="more">more</button>
+                <button id="more">more</button>
+            </div>
+            <br>
+            <div id="content2and3">
+                <div id="content2">
+                    <h3>Departments:</h3>
+                    <ol>
+                        <li>Information Technology</li>
+                        <li>Computer Science Engineering</li>
+                        <li>Electronics and Communications Engineering</li>
+                        <li>Electrical and Electronics Engineering</li>
+                        <li>Agricultural Engineering</li>
+                        <li>Mechanical Engineering</li>
+                    </ol>
                 </div>
-                <div>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
-                    test
-                    <br>
+                <br>
+                <div id="content3">
+                    <h3>Placement Recruiters:</h3>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>CTC</th>
+                        </tr>
+                        <tr>
+                            <td>Amazon</td>
+                            <td>14 Lakhs</td>
+                        </tr>
+                        <tr>
+                            <td>accenture</td>
+                            <td>12 Lakhs</td>
+                        </tr>
+                        <tr>
+                            <td>Capgemini</td>
+                            <td>10 Lakhs</td>
+                        </tr>
+                        <tr>
+                            <td>Cognizant</td>
+                            <td>10 Lakhs</td>
+                        </tr>
+                        <tr>
+                            <td>TCS</td>
+                            <td>9 Lakhs</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <!-- </div> <h3>Departments:</h3> <ol> <li>IT</li> <li>CSE</li> <li>ECE</li>
-            <li>EEE</li> <li>Agri</li> <li>Mech</li> </ol> <h3>Placement Recruiters:</h3>
-            <table> <tr> <th>Company</th> <th>CTC</th> </tr> <tr> <td>Amazon</td> <td>14
-            Lakhs</td> </tr> <tr> <td>accenture</td> <td>12 Lakhs</td> </tr> <tr>
-            <td>Capgemini</td> <td>10 Lakhs</td> </tr> <tr> <td>Cognizant</td> <td>10
-            Lakhs</td> </tr> <tr> <td>TCS</td> <td>9 Lakhs</td> </tr> </table> <br> <form>
-            <label for="fname">First name:</label><br> <input type="text" id="fname"
-            name="fname"><br> <label for="lname">Last name:</label><br> <input type="text"
-            id="lname" name="lname"> </form> -->
+            <br>
+            <div id="contentform">
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+            </div>
         </main>
     </body>
 
