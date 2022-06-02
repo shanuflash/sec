@@ -20,6 +20,7 @@
 }
 
 * {
+    zoom: 105%;
     padding: 0;
     margin: 0;
 }
@@ -118,7 +119,7 @@ main {
     padding-left: 30px;
 }
 
-#more {
+.more {
     margin: 10 0 0;
     padding: 7px;
     font-size: 20px;
@@ -136,8 +137,8 @@ main {
 
 #content2 {
     flex-basis: 100%;
-    margin: 5px;
-    /* text-align: justify; */
+    /* margin: 5px;
+    text-align: justify; */
     padding: 15px;
     background-color: rgb(219, 219, 219);
     color: black;
@@ -145,7 +146,7 @@ main {
     box-shadow: 1px 1px solid black;
 }
 
-#content2 ol {
+#content2 ul {
     margin: 10 0 0 30;
 }
 
